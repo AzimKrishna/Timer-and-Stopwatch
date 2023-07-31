@@ -17,7 +17,6 @@ function toggleView(view) {
     }
   }
 
-// JavaScript
 const stopwatchDisplay = document.getElementById("stp");
 const startButton = document.getElementById("ctrl");
 const resetButton = document.getElementById("reset-stp");
