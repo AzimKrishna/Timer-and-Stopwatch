@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Timer/Stopwatch</title>
+</head>
+<body>
+    <div class="home">
+        <div class="container-main ">
+            <div class="options container">
+                <div class="holder">
+                    <button class="primary-btn active" id="switch" onclick="toggleView('stopwatch')">Stopwatch</button>
+                    <button class="primary-btn" id="timer" onclick="toggleView('timer')">Timer</button>
+                </div>
+            </div>
+            <div class="dual-container container">
+                <div class="stopwatch card">
+                    <div class="counter">
+                        <p id="stp">00:00:00</p>
+                    </div>
+                    <div class="btn-holder">
+                        <button class="primary-btn med active" id="ctrl">Start</button>
+                        <a href="#" id="reset-stp"><img src="img/resest.png" alt="reset"></a>
+                        <a href="#" id="settings-stp" ><img src="img/settings.png" alt="settings"></a>
+                    </div>
+                </div>
+                <div class="timer card">
+                    <div class="counter">
+                        <p id="tim">00:00:00</p>
+                    </div>
+                    <div class="btn-holder-timer">
+                        <a href="#" id="play-tim"><img src="img/play.png" alt="play"></a>
+                        <a href="#" id="reset-tim"><img src="img/reset-tim.png" alt="reset"></a>
+                        <a href="#" id="settings-tim"><img src="img/edit.png" alt="settings"></a>
+                    </div>
+                    <audio id="alarmAudio" controls style="display: none;">
+                        <source src="media/beep.wav" type="audio/wav" preload="auto">
+                    </audio>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="social">
+                    <p>Connect:</p>
+                    <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="img/git.png" alt="git"></a>
+                    <a href="#"><img src="img/tele.png" alt="tele"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/script2.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.home{    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
+}
+.container{
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-main{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+.options{
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    /* background-color: beige; */
+    width: 100%;
+}
+.options .holder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px 50px;
+    margin-top: 40px;
+    /* background-color: blue; */
+    justify-content: space-between;
+}
+.primary-btn{
+    height: 40px;
+    width: 140px;
+    border-radius: 60px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 500;
+}
+.primary-btn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.dual-container{
+    /* background-color: blueviolet; */
+    width: 100%;
+    display: flex;
+    height: 75%;
+    position: relative;
+    overflow: hidden;
+}
+.dual-container .card{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+
+}
+.dual-container .stopwatch{
+    /* background-color: rgb(156, 68, 68); */
+    margin-left: 0%;
+    
+}
+.dual-container .med{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 8px;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 120px;
+    margin-top: 100px;
+}
+.btn-holder{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+}
+.btn-holder a{
+    height: 40px;
+    margin: 0px 8px;
+}
+.btn-holder img{
+    width: 40px;
+    
+}
+
+.btn-holder-timer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: #fff;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    align-items: center;
+    border-radius: 12px;
+}
+.btn-holder-timer a{
+    height: 40px;
+    margin: 0px 15px;
+}
+.btn-holder-timer img{
+    width: 40px;
+}
+
+
+.dual-container .timer{
+    /* background-color: aqua; */
+    margin-left: 100%;
+}
+.dual-container .stopwatch,
+.dual-container .timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: margin-left 0.5s ease-in-out;
+}
+.primary-btn.active {
+    background-color: #fff;
+    color: black;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: rgb(37, 0, 0); */
+}
+.footer .social{
+    height: 70%;
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    /* background-color: red; */
+    padding-right: 15px;
+    color: #fff;
+}
+.footer .social p{
+    margin-top: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.footer .social a{
+    height: 27px;
+    width: 27px;
+    margin: 0px 12px;
+}
+.footer .social img{
+    width: 27px;
+    height: 27px;
+}
+
+/* universal properties */
+
+.active{
+    background-color: #fff;
+    color: black;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+/* universal properties */
