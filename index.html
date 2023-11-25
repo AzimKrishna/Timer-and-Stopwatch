@@ -10,6 +10,9 @@
     <title>Timer/Stopwatch</title>
 </head>
 <body>
+    <div id="overlay">
+        <div class="loader"></div>
+    </div>
     <div class="home">
         <div class="container-main ">
             <div class="options container">
@@ -54,6 +57,10 @@
         </div>
     </div>
     <script src="js/script.js"></script>
-    <!-- <script src="js/script2.js"></script> -->
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('overlay').style.display = 'none';
+        });
+    </script>
 </body>
 </html>

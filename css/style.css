@@ -17,6 +17,66 @@ body {
     margin: 0;
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: #213a5f;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    background: #353535;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotationBack 1s ease-in-out infinite reverse;
+}
+
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #2e2e2e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 
 .home {
     height: 100%;
@@ -237,214 +297,252 @@ body {
 
 /* Mobile Phones */
 @media only screen and (max-width: 600px) {
-    .container{
+    .container {
         max-width: 380px;
     }
-    .counter{
+
+    .counter {
         font-size: 4rem;
         margin-top: 70px;
     }
+
     .primary-btn {
         height: 35px;
         width: 125px;
         font-size: 0.8rem;
     }
-    .btn-holder{
+
+    .btn-holder {
         gap: 0 5px;
     }
+
     .btn-holder a {
         height: 35px;
         width: 35px;
-        
+
     }
+
     .btn-holder-timer {
         margin-top: 35px;
         height: 55px;
         width: 55%;
     }
 
-    .btn-holder-timer a{
+    .btn-holder-timer a {
         width: 32px;
         height: 32px;
     }
-    .dual-container .med{
+
+    .dual-container .med {
         font-size: 0.975rem;
     }
-    .footer .social{
+
+    .footer .social {
         width: 100%;
         justify-content: center;
         padding-right: 0px;
     }
-    .footer .social a{
+
+    .footer .social a {
         height: 1.5rem;
         width: 1.5rem;
     }
-    .footer .social p{
+
+    .footer .social p {
         font-size: 0.8rem;
     }
 }
 
 /* Tablets */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    .container{
+    .container {
         max-width: 450px;
     }
-    .counter{
-        
+
+    .counter {
+
         font-size: 5.5rem;
     }
+
     .primary-btn {
         height: 35px;
         width: 130px;
         font-size: 0.8rem;
     }
-    .btn-holder{
+
+    .btn-holder {
         gap: 0 5px;
     }
+
     .btn-holder a {
         height: 35px;
         width: 35px;
-        
+
     }
+
     .btn-holder-timer {
         margin-top: 34px;
         height: 60px;
     }
 
-    .btn-holder-timer a{
+    .btn-holder-timer a {
         width: 35px;
         height: 35px;
     }
-    .dual-container .med{
+
+    .dual-container .med {
         font-size: 1rem;
     }
-    .footer .social{
+
+    .footer .social {
         width: 42%;
     }
-    .footer .social a{
+
+    .footer .social a {
         height: 2.5rem;
         width: 2.5rem;
     }
-    .footer .social p{
+
+    .footer .social p {
         font-size: 1rem;
     }
 }
 
 /* Small Desktops and Laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .container{
+    .container {
         max-width: 450px;
     }
-    .counter{
+
+    .counter {
         font-size: 5.5rem;
     }
+
     .primary-btn {
         height: 32px;
         width: 125px;
         font-size: 0.8rem;
     }
+
     .btn-holder a {
         height: 32px;
         width: 32px;
-        
+
     }
+
     .btn-holder-timer {
         margin-top: 34px;
         height: 55px;
     }
 
-    .btn-holder-timer a{
+    .btn-holder-timer a {
         width: 32px;
         height: 32px;
     }
-    .dual-container .med{
+
+    .dual-container .med {
         font-size: 1rem;
     }
 
-    .footer .social a{
+    .footer .social a {
         height: 1.5rem;
         width: 1.5rem;
     }
-    .footer .social p{
+
+    .footer .social p {
         font-size: 0.8rem;
     }
 }
 
 /* Medium Desktops and Laptops */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .container{
+    .container {
         max-width: 495px;
     }
-    .counter{
+
+    .counter {
         font-size: 6rem;
     }
+
     .primary-btn {
         height: 35px;
         width: 130px;
         font-size: 0.8rem;
     }
+
     .btn-holder a {
         height: 35px;
         width: 35px;
-        
+
     }
+
     .btn-holder-timer {
         margin-top: 34px;
         height: 60px;
     }
 
-    .btn-holder-timer a{
+    .btn-holder-timer a {
         width: 35px;
         height: 35px;
     }
-    .dual-container .med{
+
+    .dual-container .med {
         font-size: 1rem;
     }
 
-    .footer .social a{
+    .footer .social a {
         height: 1.5rem;
         width: 1.5rem;
     }
-    .footer .social p{
+
+    .footer .social p {
         font-size: 0.8rem;
     }
 }
 
 /* Large Desktops and High-Resolution Screens */
 @media only screen and (min-width: 2140px) {
-    .container{
+    .container {
         max-width: 800px;
     }
+
     .primary-btn {
         height: 70px;
         width: 225px;
         font-size: 1.4rem;
     }
-    .counter{
+
+    .counter {
         font-size: 11.3rem;
     }
-    .dual-container .med{
+
+    .dual-container .med {
         font-size: 1.75rem;
     }
+
     .btn-holder {
         margin-top: 60px;
         gap: 0 20px;
     }
+
     .btn-holder-timer {
         margin-top: 45px;
         gap: 0 20px;
         height: 105px;
         width: 50%;
     }
+
     .btn-holder a {
         height: 100%;
         width: 70px;
     }
-    .btn-holder-timer a{
+
+    .btn-holder-timer a {
         width: 60px;
         height: 60px;
     }
-    .footer .social p{
+
+    .footer .social p {
         font-size: 1.5rem;
     }
 }
