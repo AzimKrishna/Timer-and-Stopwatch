@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-} 
-html{
+}
+
+html {
     scroll-behavior: smooth;
 }
-html, body {
+
+html,
+body {
     height: 100%;
     margin: 0;
 }
 
 
-.home{    
+.home {
     height: 100%;
     width: 100%;
     display: flex;
@@ -26,24 +30,28 @@ html, body {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
 }
-.container{
+
+.container {
     max-width: 550px;
     margin-right: auto;
     margin-left: auto;
 }
-.container-main{
+
+.container-main {
     /* background-color: red; */
     width: 100%;
     height: 100%;
 }
-.options{
+
+.options {
     height: 17%;
     display: flex;
     justify-content: center;
     /* background-color: beige; */
     width: 100%;
 }
-.options .holder{
+
+.options .holder {
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,7 +60,8 @@ html, body {
     /* background-color: blue; */
     justify-content: space-between;
 }
-.primary-btn{
+
+.primary-btn {
     height: 40px;
     width: 140px;
     border-radius: 60px;
@@ -63,14 +72,15 @@ html, body {
     color: #fff;
     font-weight: 500;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
     background-color: #fff;
     color: black;
     transition: 0.3s ease;
     font-weight: 500;
 }
 
-.dual-container{
+.dual-container {
     /* background-color: blueviolet; */
     width: 100%;
     display: flex;
@@ -78,24 +88,28 @@ html, body {
     position: relative;
     overflow: hidden;
 }
-.dual-container .card{
+
+.dual-container .card {
     height: 100%;
     width: 100%;
     /* background-color: red; */
     position: absolute;
 
 }
-.dual-container .stopwatch{
+
+.dual-container .stopwatch {
     /* background-color: rgb(156, 68, 68); */
     margin-left: 0%;
-    
+
 }
-.dual-container .med{
-    font-size: 18px;
+
+.dual-container .med {
+    font-size: 1.125rem;
     font-weight: 500;
     margin: 0px 8px;
 }
-.counter{
+
+.counter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,26 +117,30 @@ html, body {
     width: 100%;
     color: #fff;
     font-weight: 500;
-    font-size: 120px;
+    font-size: 7.5rem;
     margin-top: 100px;
 }
-.btn-holder{
+
+.btn-holder {
     display: flex;
     margin-top: 30px;
     justify-content: center;
     height: 70px;
     align-items: center;
 }
-.btn-holder a{
+
+.btn-holder a {
     height: 40px;
+    width: 40px;
     margin: 0px 8px;
 }
-.btn-holder img{
-    width: 40px;
-    
+
+.btn-holder img {
+    width: 100%;
+
 }
 
-.btn-holder-timer{
+.btn-holder-timer {
     display: flex;
     margin-top: 30px;
     justify-content: center;
@@ -134,28 +152,33 @@ html, body {
     align-items: center;
     border-radius: 12px;
 }
-.btn-holder-timer a{
+
+.btn-holder-timer a {
     height: 40px;
+    width: 40px;
     margin: 0px 15px;
 }
-.btn-holder-timer img{
-    width: 40px;
+
+.btn-holder-timer img {
+    width: 100%;
 }
 
 
-.dual-container .timer{
+.dual-container .timer {
     /* background-color: aqua; */
     margin-left: 100%;
 }
+
 .dual-container .stopwatch,
 .dual-container .timer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: margin-left 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: margin-left 0.5s ease-in-out;
 }
+
 .primary-btn.active {
     background-color: #fff;
     color: black;
@@ -165,7 +188,7 @@ html, body {
 
 
 
-.footer{
+.footer {
     width: 100%;
     height: 8%;
     display: flex;
@@ -173,7 +196,8 @@ html, body {
     align-items: center;
     /* background-color: rgb(37, 0, 0); */
 }
-.footer .social{
+
+.footer .social {
     height: 70%;
     width: 30%;
     display: flex;
@@ -183,24 +207,26 @@ html, body {
     padding-right: 15px;
     color: #fff;
 }
-.footer .social p{
+
+.footer .social p {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 1.2rem;
     margin-right: 5px;
 }
-.footer .social a{
-    height: 27px;
-    width: 27px;
+
+.footer .social a {
+    height: 2.5rem;
+    width: 2.5rem;
     margin: 0px 12px;
 }
-.footer .social img{
-    width: 27px;
-    height: 27px;
+
+.footer .social img {
+    width: 100%;
 }
 
 /* universal properties */
 
-.active{
+.active {
     background-color: #fff;
     color: black;
     transition: 0.3s ease;
@@ -208,3 +234,216 @@ html, body {
 }
 
 /* universal properties */
+
+/* Mobile Phones */
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 380px;
+    }
+    .counter{
+        font-size: 4rem;
+        margin-top: 70px;
+    }
+    .primary-btn {
+        height: 35px;
+        width: 125px;
+        font-size: 0.8rem;
+    }
+    .btn-holder{
+        gap: 0 5px;
+    }
+    .btn-holder a {
+        height: 35px;
+        width: 35px;
+        
+    }
+    .btn-holder-timer {
+        margin-top: 35px;
+        height: 55px;
+        width: 55%;
+    }
+
+    .btn-holder-timer a{
+        width: 32px;
+        height: 32px;
+    }
+    .dual-container .med{
+        font-size: 0.975rem;
+    }
+    .footer .social{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer .social a{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .footer .social p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container{
+        max-width: 450px;
+    }
+    .counter{
+        
+        font-size: 5.5rem;
+    }
+    .primary-btn {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+    }
+    .btn-holder{
+        gap: 0 5px;
+    }
+    .btn-holder a {
+        height: 35px;
+        width: 35px;
+        
+    }
+    .btn-holder-timer {
+        margin-top: 34px;
+        height: 60px;
+    }
+
+    .btn-holder-timer a{
+        width: 35px;
+        height: 35px;
+    }
+    .dual-container .med{
+        font-size: 1rem;
+    }
+    .footer .social{
+        width: 42%;
+    }
+    .footer .social a{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .footer .social p{
+        font-size: 1rem;
+    }
+}
+
+/* Small Desktops and Laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container{
+        max-width: 450px;
+    }
+    .counter{
+        font-size: 5.5rem;
+    }
+    .primary-btn {
+        height: 32px;
+        width: 125px;
+        font-size: 0.8rem;
+    }
+    .btn-holder a {
+        height: 32px;
+        width: 32px;
+        
+    }
+    .btn-holder-timer {
+        margin-top: 34px;
+        height: 55px;
+    }
+
+    .btn-holder-timer a{
+        width: 32px;
+        height: 32px;
+    }
+    .dual-container .med{
+        font-size: 1rem;
+    }
+
+    .footer .social a{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .footer .social p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium Desktops and Laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container{
+        max-width: 495px;
+    }
+    .counter{
+        font-size: 6rem;
+    }
+    .primary-btn {
+        height: 35px;
+        width: 130px;
+        font-size: 0.8rem;
+    }
+    .btn-holder a {
+        height: 35px;
+        width: 35px;
+        
+    }
+    .btn-holder-timer {
+        margin-top: 34px;
+        height: 60px;
+    }
+
+    .btn-holder-timer a{
+        width: 35px;
+        height: 35px;
+    }
+    .dual-container .med{
+        font-size: 1rem;
+    }
+
+    .footer .social a{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .footer .social p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Large Desktops and High-Resolution Screens */
+@media only screen and (min-width: 2140px) {
+    .container{
+        max-width: 800px;
+    }
+    .primary-btn {
+        height: 70px;
+        width: 225px;
+        font-size: 1.4rem;
+    }
+    .counter{
+        font-size: 11.3rem;
+    }
+    .dual-container .med{
+        font-size: 1.75rem;
+    }
+    .btn-holder {
+        margin-top: 60px;
+        gap: 0 20px;
+    }
+    .btn-holder-timer {
+        margin-top: 45px;
+        gap: 0 20px;
+        height: 105px;
+        width: 50%;
+    }
+    .btn-holder a {
+        height: 100%;
+        width: 70px;
+    }
+    .btn-holder-timer a{
+        width: 60px;
+        height: 60px;
+    }
+    .footer .social p{
+        font-size: 1.5rem;
+    }
+}
