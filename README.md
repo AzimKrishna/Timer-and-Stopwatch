@@ -48,13 +48,15 @@ The Stopwatch and Countdown Timer app is a versatile web application that offers
 - When setting the countdown timer, enter the time in the correct format: hh:mm:ss, mm:ss, or ss. Invalid inputs will prompt an error.
 - This application is completely responsive. 
 
+## Try it Online 💻
+
+You can try the Stopwatch and Countdown Timer app online by following [this link](https://abkrishna.me/Timer-and-Stopwatch/).
+
+
 ## Feedback and Support 💌
 
 I hope you find this Stopwatch and Countdown Timer app useful for managing your time effectively. If you have any feedback, suggestions, or encounter any issues, please feel free to reach out to me at azimbaji19@gmail.com .
 
 Enjoy tracking time with precision! 🎯🚀
 
-## Try it Online 💻
-
-You can try the Stopwatch and Countdown Timer app online by following [this link](https://abkrishna.me/Timer-and-Stopwatch/).
 
