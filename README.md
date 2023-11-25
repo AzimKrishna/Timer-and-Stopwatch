@@ -46,6 +46,7 @@ The Stopwatch and Countdown Timer app is a versatile web application that offers
 
 - To ensure proper functionality, host the app on a live server or localhost. Simply opening the index file as a web page won't provide the required features.
 - When setting the countdown timer, enter the time in the correct format: hh:mm:ss, mm:ss, or ss. Invalid inputs will prompt an error.
+- This application is completely responsive. 
 
 ## Feedback and Support 💌
 
