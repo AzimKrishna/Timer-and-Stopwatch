@@ -22,6 +22,11 @@ The Stopwatch and Countdown Timer app is a versatile web application that offers
 ![Countdown Timer](screenshots/Screenshot_2.png)
 *Screenshot of the Countdown Timer, ready to start a custom countdown.*
 
+![Countdown Timer](screenshots/Screenshot_3.png)
+
+*Screenshot of the Countdown Timer, on a mobile device.*
+
+
 ## How to Use 📖
 
 1. **Switch Between Stopwatch and Countdown Timer:** Click the "Stopwatch" or "Timer" option to switch between the Stopwatch and Countdown Timer functionalities.
